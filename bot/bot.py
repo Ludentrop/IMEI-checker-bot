@@ -49,7 +49,7 @@ async def cmd_check_imei(message: types.Message, command: CommandObject):
         await message.reply("У вас нет доступа к этому боту.")
         return
 
-    if command.args is None:  # 20h This is delayed
+    if command.args is None:
         await message.answer(
             "Ошибка: не переданы аргументы"
         )
